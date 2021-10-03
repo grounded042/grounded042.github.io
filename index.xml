@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jon Carl</title>
+    <link>https://joncarl.com/</link>
+    <description>Recent content on Jon Carl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 03 Oct 2021 16:52:48 -0600</lastBuildDate><atom:link href="https://joncarl.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aurora</title>
+      <link>https://joncarl.com/posts/aurora/</link>
+      <pubDate>Sun, 03 Oct 2021 16:52:48 -0600</pubDate>
+      
+      <guid>https://joncarl.com/posts/aurora/</guid>
+      <description>A while back I backed a Kickstarter project called DreamScreen. The project was to build a box the would add LED light behind your TV that &amp;ldquo;extended&amp;rdquo; what was on the TV. It got enough backers and they actually shipped out the boxes.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://joncarl.com/about/</link>
+      <pubDate>Mon, 06 Sep 2021 11:43:19 -0600</pubDate>
+      
+      <guid>https://joncarl.com/about/</guid>
+      <description>My name is Jon Carl.</description>
+    </item>
+    
+  </channel>
+</rss>
