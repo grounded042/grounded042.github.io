@@ -1,0 +1,29 @@
+<header>
+	<nav>
+		<a href="{{ .URL | absLangURL }}" title="{{ .Site.Title }}">
+			<span>
+				{{ .Site.Title }}
+			</span>
+		</a>
+		<b>-</b>
+		{{ with .OutputFormats.Get "rss" -}}
+		<a href="{{ .Permalink }}" title="RSS">
+			<span>RSS</span>
+		</a>
+		{{ end -}}
+		{{if gt 0 (len .Site.Menus.main)}}<b>-</b>{{ end }}
+		{{- $currentPage := . }}
+		{{- range $index, $item := .Site.Menus.main }}
+		{{- $menu_item_url := (cond (strings.HasSuffix $item.URL "/") $item.URL (printf "%s/" $item.URL) ) | absLangURL }}
+		{{- $page_url:= $currentPage.Permalink | absLangURL }}
+		<a href="{{ $item.URL | absLangURL }}" title="{{ $item.Title | default $item.Name }}">
+			<span {{- if eq $menu_item_url $page_url }} class="active" {{- end }}>
+				{{- $item.Pre }}
+				{{- $item.Name -}}
+				{{ $item.Post -}}
+			</span>
+		</a>
+		{{if lt (add $index 1) (len site.Menus.main)}}<b>-</b>{{ end }}
+		{{- end }}
+	</nav>
+</header>

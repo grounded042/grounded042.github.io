@@ -1,0 +1,14 @@
+<div>
+	<h1>Posts</h1>
+	{{- range $index, $post := where .Site.RegularPages "Type" "posts" }}
+	<article class="list-post">
+		<header>
+			<a aria-label="post link to {{ $post.Title | plainify }}" href="{{ $post.Permalink }}"><h2>{{ $post.Title }}</h2></a>
+			<h5>{{ dateFormat "2006-01-02" $post.Date }} | {{ printf "%d min" $post.ReadingTime }}</h5>
+		</header>
+		<section>
+			<p>{{ $post.Summary | plainify | htmlUnescape }}{{ if $post.Truncated }}..{{ end }}</p>
+		</section>
+	</article>
+	{{ end }}
+</div>
