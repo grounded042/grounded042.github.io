@@ -33,7 +33,12 @@ a:hover h2 {
 	padding-left: 1px;
 }
 
-.list-post h5 {
+.post h1 {
+	margin-bottom: 0;
+	padding-left: 1px;
+}
+
+.list-post h5, .post h5 {
 	margin-top: 0;
 	margin-bottom: 0;
 }

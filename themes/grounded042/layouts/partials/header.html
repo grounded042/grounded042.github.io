@@ -1,17 +1,17 @@
 <header>
 	<nav>
-		<a href="{{ .URL | absLangURL }}" title="{{ .Site.Title }}">
+		<a href="{{ .Site.Home.URL | absLangURL }}" title="{{ .Site.Title }}">
 			<span>
 				{{ .Site.Title }}
 			</span>
 		</a>
 		<b>-</b>
-		{{ with .OutputFormats.Get "rss" -}}
+		{{ with .Site.Home.OutputFormats.Get "rss" -}}
 		<a href="{{ .Permalink }}" title="RSS">
 			<span>RSS</span>
 		</a>
 		{{ end -}}
-		{{if gt 0 (len .Site.Menus.main)}}<b>-</b>{{ end }}
+		{{if gt 0 (len site.Menus.main)}}<b>-</b>{{ end }}
 		{{- $currentPage := . }}
 		{{- range $index, $item := .Site.Menus.main }}
 		{{- $menu_item_url := (cond (strings.HasSuffix $item.URL "/") $item.URL (printf "%s/" $item.URL) ) | absLangURL }}
