@@ -1,15 +1,9 @@
 <header>
 	<nav>
-		<a href="{{ .Site.Home.URL | absLangURL }}" title="{{ .Site.Title }}">
-			<span>
-				{{ .Site.Title }}
-			</span>
-		</a>
+		<a href="{{ .Site.Home.URL | absLangURL }}" title="{{ .Site.Title }}">{{ .Site.Title }}</a>
 		<b>-</b>
 		{{ with .Site.Home.OutputFormats.Get "rss" -}}
-		<a href="{{ .Permalink }}" title="RSS">
-			<span>RSS</span>
-		</a>
+		<a href="{{ .Permalink }}" title="RSS">RSS</a>
 		{{ end -}}
 		{{if gt 0 (len site.Menus.main)}}<b>-</b>{{ end }}
 		{{- $currentPage := . }}
