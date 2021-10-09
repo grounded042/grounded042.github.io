@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jon Carl</title>
+    <title>HELLO Jon Carl</title>
     <link>https://joncarl.com/</link>
     <description>Recent content on Jon Carl</description>
     <generator>Hugo -- gohugo.io</generator>
@@ -12,16 +12,35 @@
       <pubDate>Sun, 03 Oct 2021 16:52:48 -0600</pubDate>
       
       <guid>https://joncarl.com/posts/aurora/</guid>
-      <description>A while back I backed a Kickstarter project called DreamScreen. The project was to build a box the would add LED light behind your TV that &amp;ldquo;extended&amp;rdquo; what was on the TV. It got enough backers and they actually shipped out the boxes.</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://joncarl.com/about/</link>
-      <pubDate>Mon, 06 Sep 2021 11:43:19 -0600</pubDate>
-      
-      <guid>https://joncarl.com/about/</guid>
-      <description>My name is Jon Carl.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;https://joncarl.com/images/aurora.png&#34; alt=&#34;Aurora at work&#34;&gt;&lt;/p&gt;
+&lt;p&gt;A while back I backed a Kickstarter project called
+&lt;a href=&#34;https://www.kickstarter.com/projects/237916976/dreamscreen-hd-and-4k-led-backlighting-for-any-hdm&#34;&gt;DreamScreen&lt;/a&gt;.
+The project was to build a box that would add LED light behind your TV and
+&amp;ldquo;extend&amp;rdquo; what was on the TV. It got enough backers and they actually shipped
+out the boxes. You put an LED strip around the back of the TV, and then plugged
+that strip into the box they built. You then plugged your TV source (Apple TV
+for me) into the box and the box into the TV.&lt;/p&gt;
+&lt;p&gt;Fast forward several years and it eventually stopped working. The company that
+had formed around the project was gone at that point and so you couldn&amp;rsquo;t really
+get replacements. Maybe you could find one on eBay, but their mobile app to
+control the device had also stopped working. At the time I looked around for an
+alternative device, but I never really found a good one for my needs.&lt;/p&gt;
+&lt;p&gt;Fast forward again and I noticed a post on
+&lt;a href=&#34;https://www.reddit.com/r/appletv/comments/o4k5aa/apple_tv_plus_200_self_addressable_leds_it_seems/&#34;&gt;/r/appletv&lt;/a&gt;
+about a setup that looked exactly like my DreamScreen setup. I had really
+enjoyed my DreamScreen so I started looking into the setup. The author had
+written up a detailed
+&lt;a href=&#34;https://www.andrewmohawk.com/2021/05/25/aurora-ambient-lighting/&#34;&gt;post&lt;/a&gt; on how
+he got it all working so I had everything I needed. The first thing to check
+was if I could use my same LEDs. He was using WS2812b LEDs and the LEDs that
+came with my DreamScreen were SK6812 LEDs. They were compatible! I also found
+details on the connector that DreamScreen had shipped with and I could wire
+things up.&lt;/p&gt;
+&lt;p&gt;With all the details and the hardware mentioned in the post I set out on
+building a DreamScreen replacement. Andrew, the author of the project, did a
+great job documenting things and I had a working system in no time! Now I can
+enjoy the same effects of DreamScreen even though that project is dead.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
