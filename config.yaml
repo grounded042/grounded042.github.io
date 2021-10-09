@@ -31,15 +31,3 @@ params:
         favicon32x32: "<link / abs url>"
         apple_touch_icon: "<link / abs url>"
         safari_pinned_tab: "<link / abs url>"
-
-menu:
-    main: [{}]
-# TODO: build this out
-#         - identifier: tags
-#           name: tags
-#           url: /tags
-#           weight: 1
-#         - identifier: about
-#           name: about
-#           url: /about
-#           weight: 2
